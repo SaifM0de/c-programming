@@ -1,0 +1,15 @@
+aaaa bbbb
+aaaa bbbbb
+aaaaa bbbb
+aaaaaa bbbbb
+aaaaa bbbbbb
+aaaaa bbbbb bbbbb
+aaaaa aaaaa bbbbb
+aabca aabbc
+aaaaa
+11111 aaaaa
+1111a aaaa1
+111aa 2222a
+abcde 12345
+abcde !@#$$
+           

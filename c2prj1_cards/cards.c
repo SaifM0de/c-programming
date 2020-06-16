@@ -116,7 +116,7 @@ card_t card_from_letters(char value_let, char suit_let) {
   else if(value_let == 'A'){
     temp.value = 14;
   }
-  else if(value_let == '10'){
+  else if(value_let == '0'){
     temp.value = 10;
   }
   else{

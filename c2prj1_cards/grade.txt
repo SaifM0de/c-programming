@@ -1,10 +1,23 @@
-Grading at Tue Jun 16 10:10:59 UTC 2020
+Grading at Tue Jun 16 10:22:37 UTC 2020
 Compiling cards.c
-cards.c: In function ‘card_from_letters’:
-cards.c:119:24: error: multi-character character constant [-Werror=multichar]
-   else if(value_let == '10'){
-                        ^
-cc1: all warnings being treated as errors
-Could not compile your card.c!
+Testing card_from_letters
+Passed
+Testing value_letter and suit_letter
+Passed
+Testing print_card
+Passed
+Testing card_from_num
+Passed
+Testing ranking_to_string
+ranking_to_string(STRAIGHT_FLUSH) resulted in STRAIGHT FLUSH (Incorrect)
+ranking_to_string(FOUR_OF_A_KIND) resulted in FOUR OF A KIND (Incorrect)
+ranking_to_string(FULL_HOUSE) resulted in FULL HOUSE (Incorrect)
+ranking_to_string(FLUSH) resulted in FLUSH  (Correct)
+ranking_to_string(STRAIGHT) resulted in STRAIGHT  (Correct)
+ranking_to_string(THREE_OF_A_KIND) resulted in THREE OF A KIND (Incorrect)
+ranking_to_string(TWO_PAIR) resulted in TWO PAIR (Incorrect)
+ranking_to_string(PAIR) resulted in PAIR  (Correct)
+ranking_to_string(NOTHING) resulted in NOTHING  (Correct)
+Failed
 
 Overall Grade: FAILED

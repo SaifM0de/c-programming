@@ -104,25 +104,33 @@ void print_card(card_t c) {
 
 card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
-  suit_t suit;
+  if(value_let == 'J'){
+    temp.value = 11;
+  }
+  else if(value_let == 'Q'){
+    temp.value = 12;
+  }
+  else if(value_let == 'K'){
+    temp.value = 13;
+  }
+  else if(value_let == 'A'){
+    temp.value = 14;
+  }
+  else{
+    temp.value = value_let - '0';
+  }
   
-  temp.value = value_let - '0';
-
   if(suit_let == 's' || suit_let == 'S'){
-    suit = SPADES;
-    temp.suit = suit;
+    temp.suit = 0;
   }
   else if(suit_let == 'h' || suit_let == 'H'){
-    suit = HEARTS;
-    temp.suit = suit;
+    temp.suit = 1;
   }
   else if(suit_let == 'd' || suit_let == 'D'){
-    suit = DIAMONDS;
-    temp.suit = suit;
+    temp.suit = 2;
   }
   else if(suit_let == 'c' || suit_let == 'C'){
-    suit = CLUBS;
-    temp.suit = suit;
+    temp.suit = 3;
   }
   else {
     printf("Invalid card suit entered.");

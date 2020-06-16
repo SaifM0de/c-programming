@@ -1,22 +1,18 @@
-Grading at Tue Jun 16 08:44:11 UTC 2020
+Grading at Tue Jun 16 08:46:08 UTC 2020
 Compiling cards.c
 cards.c: In function ‘card_from_letters’:
-cards.c:112:17: error: expected expression before ‘suit_t’
-     temp.suit = suit_t SPADES;
+cards.c:111:17: error: expected expression before ‘suit_t’
+     temp.suit = suit_t 0;
                  ^
-cards.c:115:17: error: expected expression before ‘suit_t’
-     temp.suit = suit_t HEARTS;
+cards.c:114:17: error: expected expression before ‘suit_t’
+     temp.suit = suit_t 1;
                  ^
-cards.c:118:17: error: expected expression before ‘suit_t’
-     temp.suit = suit_t DIAMONDS;
+cards.c:117:17: error: expected expression before ‘suit_t’
+     temp.suit = suit_t 2;
                  ^
-cards.c:121:17: error: expected expression before ‘suit_t’
-     temp.suit = suit_t CLUBS;
+cards.c:120:17: error: expected expression before ‘suit_t’
+     temp.suit = suit_t 3;
                  ^
-cards.c:107:10: error: unused variable ‘suit’ [-Werror=unused-variable]
-   suit_t suit;
-          ^
-cc1: all warnings being treated as errors
 Could not compile your card.c!
 
 Overall Grade: FAILED

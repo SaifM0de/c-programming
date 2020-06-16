@@ -1,18 +1,22 @@
-Grading at Tue Jun 16 08:46:08 UTC 2020
+Grading at Tue Jun 16 08:49:50 UTC 2020
 Compiling cards.c
 cards.c: In function ‘card_from_letters’:
-cards.c:111:17: error: expected expression before ‘suit_t’
-     temp.suit = suit_t 0;
-                 ^
-cards.c:114:17: error: expected expression before ‘suit_t’
-     temp.suit = suit_t 1;
-                 ^
-cards.c:117:17: error: expected expression before ‘suit_t’
-     temp.suit = suit_t 2;
-                 ^
-cards.c:120:17: error: expected expression before ‘suit_t’
-     temp.suit = suit_t 3;
-                 ^
+cards.c:112:21: error: request for member ‘SPADES’ in something not a structure or union
+     temp.suit = suit.SPADES;
+                     ^
+cards.c:115:21: error: request for member ‘HEARTS’ in something not a structure or union
+     temp.suit = suit.HEARTS;
+                     ^
+cards.c:118:21: error: request for member ‘DIAMONDS’ in something not a structure or union
+     temp.suit = suit.DIAMONDS;
+                     ^
+cards.c:121:21: error: request for member ‘CLUBS’ in something not a structure or union
+     temp.suit = suit.CLUBS;
+                     ^
+cards.c:107:10: error: variable ‘suit’ set but not used [-Werror=unused-but-set-variable]
+   suit_t suit;
+          ^
+cc1: all warnings being treated as errors
 Could not compile your card.c!
 
 Overall Grade: FAILED

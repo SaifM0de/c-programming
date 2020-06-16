@@ -1,6 +1,19 @@
-Grading at Tue Jun 16 08:34:32 UTC 2020
+Grading at Tue Jun 16 08:39:51 UTC 2020
 Compiling cards.c
-Testing card_from_letters
-Failed
+cards.c: In function ‘card_from_letters’:
+cards.c:111:12: error: unused variable ‘SPADES’ [-Werror=unused-variable]
+     suit_t SPADES;
+            ^
+cards.c:114:12: error: unused variable ‘HEARTS’ [-Werror=unused-variable]
+     suit_t HEARTS;
+            ^
+cards.c:117:12: error: unused variable ‘DIAMONDS’ [-Werror=unused-variable]
+     suit_t DIAMONDS;
+            ^
+cards.c:120:12: error: unused variable ‘CLUBS’ [-Werror=unused-variable]
+     suit_t CLUBS;
+            ^
+cc1: all warnings being treated as errors
+Could not compile your card.c!
 
 Overall Grade: FAILED
